@@ -28,4 +28,5 @@
     <aop:config>
         <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.luciuspig.service.*.*.*(..))" />
     </aop:config>
+
 </beans>

@@ -17,7 +17,7 @@
     </bean>
 
     <!--Realm实现-->
-    <bean id="userRealm" class="com.luciuspig.shiro.realm.UserRealm">
+    <bean id="userRealm" class="com.luciuspig.shiro.realm.UserUserRealmRealm">
         <property name="credentialsMatcher" ref="credentialsMatcher"/>
         <property name="cachingEnabled" value="true"/>
         <property name="authenticationCachingEnabled" value="true"/>

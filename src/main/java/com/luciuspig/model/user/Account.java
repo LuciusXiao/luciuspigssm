@@ -16,6 +16,9 @@ public class Account implements Serializable {
     /**密码 (md5：密码+盐)*/
     private  String password;
 
+    /**盐值 */
+    private String salt;
+
     /**是否启用*/
     private Boolean enable;
 
@@ -54,4 +57,18 @@ public class Account implements Serializable {
     public void setEnable(Boolean enable) {
         this.enable = enable;
     }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public String getCredentialsSalt() {
+        return account + salt;
+    }
+
+
 }

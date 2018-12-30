@@ -11,7 +11,6 @@
 
     <context:property-placeholder location="classpath:db.properties"/>
 
-    <!-- 数据库连接池 -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}"/>
         <property name="username" value="${jdbc.username}"/>
@@ -30,11 +29,11 @@
         <!--扫描entity包,使用别名,多个用;隔开-->
     </bean>
 
-<!--
+
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.luciuspig.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
--->
+
 
 </beans>

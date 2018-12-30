@@ -20,8 +20,8 @@
                 <bean class="com.luciuspig.controller.converter.CoinDateConverter"/>
             </list>
         </property>
-
     </bean>
+
     <!-- 组件扫描，controller,service -->
     <context:component-scan base-package="com.luciuspig.*"/>
 
