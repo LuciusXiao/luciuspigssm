@@ -17,8 +17,13 @@ public class User implements Serializable {
     /**姓名*/
     private String name;
 
-    public User() {
+    /** 手机号*/
+    private  String mobilePhone;
 
+    public User() {
+    }
+    public User(Long id) {
+        this.id = id;
     }
 
     public Long getId() {
@@ -45,6 +50,11 @@ public class User implements Serializable {
         this.name = name;
     }
 
+    public String getMobilePhone() {
+        return mobilePhone;
+    }
 
-
+    public void setMobilePhone(String mobilePhone) {
+        this.mobilePhone = mobilePhone;
+    }
 }
